@@ -1,6 +1,45 @@
 <!DOCTYPE html>
 <html>
+<head>
+    <title>ariefrahmansyah.github.io</title>
+</head>
 <body>
-"Not all those who wander are lost." - J. R. R. Tolkien
+    <center>
+        <h2>ariefrahmansyah</h2>
+        <div id="contact"></div>
+    </center>
+
+    <script>
+        function initContactData(){
+            var data = "";
+            var contacts = [
+                "mailto:ariefrahmansyah@hotmail.com"
+                , ""
+                , "mailto:arief.rahmansyah@tokopedia.com"
+                , "https://tokopedia.com/team/589"
+                , ""
+                , "https://github.com/ariefrahmansyah"
+                , "https://id.linkedin.com/in/ariefrahmansyah"
+                , ""
+                , "https://facebook.com/arief.aertevasius"
+                , "https://instagram.com/ariefrahmansyah"
+                , "https://plus.google.com/+AriefRahmansyah"
+                , "https://youtube.com/c/AriefRahmansyah"
+                , "https://twitter.com/ariefr23"
+                , ""
+                ];
+
+            for (var i = 0; i < contacts.length; i++) {
+                data += "<a href='" + contacts[i] + "' target='_blank' style='text-decoration: none; color: black;'>" + contacts[i] + "</a><br>";
+            }
+
+            document.getElementById("contact").innerHTML = data;
+        }
+
+        (function() {
+            initContactData();
+        })();
+    </script>
 </body>
 </html>
+<!-- "Not all those who wander are lost." - J. R. R. Tolkien -->
